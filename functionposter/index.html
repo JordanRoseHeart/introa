@@ -1,0 +1,23 @@
+<script>
+    
+    //a=p(1+r/n)^nt
+    
+    function carloan (){
+        var loan = prompt ("How much money are you taking out?");
+        var rateofinterest = prompt ("What is the interest rate? %");
+        var numberoftimesperyear = 12 
+        var years = 3
+        //starts calculation
+        var beforetheone = (rateofinterest/numberoftimesperyear);
+        var aftertheone = (beforetheone + 1);
+        var outsidethebubble = (numberoftimesperyear*years);
+        var squarebyoutsidenumber = (aftertheone^outsidethebubble);
+        var multiplybyp = (loan*squarebyoutsidenumber);
+        var finalanswer = (multiplybyp - loan);
+        alert ("The result is: " + finalanswer);
+    };
+    //recalls function
+    carloan()
+    
+    
+    </script>
