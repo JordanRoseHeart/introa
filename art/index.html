@@ -1,0 +1,49 @@
+<html>
+<head></head>
+<body>
+<canvas id="myCanvas" width="800px" height="800px"></canvas>
+<script>
+//making the canvas
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var canvasWidth = 800;
+    var canvasHeight = 800;
+    
+//starting painting
+//right side
+ctx.fillStyle = "#191919";
+    ctx.shadowColor = "#999";
+    ctx.shadowBlur = 12;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 10;
+    ctx.rotate(5 * Math.PI / 180);
+    ctx.fillRect(200,275,150,150);
+
+        ctx.fillStyle = "#e0ddd4";
+    ctx.fillRect(200,80,150,150);
+
+//Left Side
+    ctx.fillStyle = "#191919";
+    ctx.fillRect(50,100,150,75);
+    
+    ctx.fillStyle = "#e0ddd4";
+    ctx.fillRect(50,175,150,75);
+
+    ctx.fillStyle = "#191919";
+    ctx.fillRect(50,250,150,75);
+    
+    ctx.fillStyle = "#e0ddd4";
+    ctx.fillRect(50,325,150,75);
+
+
+    
+    
+//offSetY= Up and down
+//offSetX= Left to right
+//(x-axis,y-axis,width,height)
+//black=#191919
+//white=#e0ddd4
+</script>
+</html>
+
+
